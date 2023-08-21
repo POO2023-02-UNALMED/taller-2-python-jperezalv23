@@ -20,13 +20,13 @@ class Motor:
 
 class Auto:
     numinstancias = 0
-    def __init__(self, modelo, precio, marca, registro):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
         Auto.numinstancias += 1
         self.modelo = modelo
         self.precio = precio
-        self.asientos = [Asiento(self)] 
+        self.asientos = asientos
         self.marca = marca
-        self.motor = Motor(self)
+        self.motor = motor
         self.registro = registro
         self.cantidadCreados = Auto.numinstancias
 
