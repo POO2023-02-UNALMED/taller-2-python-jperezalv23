@@ -40,7 +40,7 @@ class Auto:
                 cantidadasientos += 1
         return cantidadasientos
     
-    def verificarIntegridad(self, asientos, motor):
+    def verificarIntegridad(self):
         if self.motor.registro == self.registro:
             for i in range(len(self.asientos)):
                 if self.asientos[i].registro != self.registro:
