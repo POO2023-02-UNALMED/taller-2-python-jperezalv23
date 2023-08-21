@@ -33,7 +33,7 @@ class Auto:
         self.registro = registro
         self.cantidadCreados = Auto.numinstancias
 
-    def cantidadAsientos(self, asientos):
+    def cantidadAsientos(self):
         cantidadasientos = 0
         for i in range(len(self.asientos)):
             if self.asientos[i] != None:
